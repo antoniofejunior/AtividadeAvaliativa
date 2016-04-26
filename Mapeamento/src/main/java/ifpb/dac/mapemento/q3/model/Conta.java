@@ -10,8 +10,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -26,7 +26,7 @@ public abstract class Conta implements Serializable{
     private int digito;
     @Embedded
     private Agencia agencia;
-    @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.REFRESH})
+    @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.REFRESH})
     private Cliente cliente;
     private double saldo;
     private int senha;
@@ -48,7 +48,7 @@ public abstract class Conta implements Serializable{
      */
     public long getCodigo() {
         return codigo;
-    }
+    } 
 
     /**
      * @param codigo the codigo to set
