@@ -9,16 +9,18 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
-/**
- *
- * @author Junior
- */
 @Entity
+@SequenceGenerator(name = "cliente_seq" , sequenceName = "cliente_seq",
+   allocationSize = 1, initialValue = 1)
 public class Cliente implements Serializable {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE , generator = "cliente_seq")
     private long codigo;
     private String nome;
     private String email;

@@ -234,7 +234,7 @@ public class JFCadastrarConta extends javax.swing.JFrame {
         Agencia agencia = new Agencia();
         agencia.setNumero(Integer.parseInt(jFTFAgencia.getText()));
         agencia.setDigito(Integer.parseInt(jFTFDigitoAgencia.getText()));
-        Cliente cliente = new Cliente();
+        Cliente cliente;
         
         ClienteJpaController clienteJpaController = new ClienteJpaController(emf);
         cliente = clienteJpaController.findCliente(1L);
