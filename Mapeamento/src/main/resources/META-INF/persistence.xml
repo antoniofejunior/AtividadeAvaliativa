@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="JPAAtividadeDerby" transaction-type="RESOURCE_LOCAL">
-    <class>ifpb.dac.atividadejpa.q1.Autor</class>
-    <class>ifpb.dac.atividadejpa.q1.Endereco</class>
-    <class>ifpb.dac.atividadejpa.q1.Pessoa</class>
-    <class>ifpb.dac.atividadejpa.q1.Professor</class>
-    <class>ifpb.dac.atividadejpa.q1.Telefone</class>
-    <class>ifpb.dac.atividadejpa.q2.Conserto</class>
-    <class>ifpb.dac.atividadejpa.q2.Funcionario</class>
-    <class>ifpb.dac.atividadejpa.q2.Oficina</class>
-    <class>ifpb.dac.atividadejpa.q3.model.Cliente</class>
-    <class>ifpb.dac.atividadejpa.q3.model.Corrente</class>
-    <class>ifpb.dac.atividadejpa.q3.model.Poupanca</class>
-    <class>ifpb.dac.atividadejpa.DAO.ConvertLocalDateForDate</class>
+    <class>ifpb.dac.mapemento.q1.Autor</class>
+    <class>ifpb.dac.mapemento.q1.Endereco</class>
     <class>ifpb.dac.mapemento.q1.Livro</class>
+    <class>ifpb.dac.mapemento.q1.Pessoa</class>
+    <class>ifpb.dac.mapemento.q1.Professor</class>
+    <class>ifpb.dac.mapemento.q1.Telefone</class>
+    <class>ifpb.dac.mapemento.q2.Conserto</class>
+    <class>ifpb.dac.mapemento.q2.Funcionario</class>
+    <class>ifpb.dac.mapemento.q2.Oficina</class>
+    <class>ifpb.dac.mapemento.q3.model.Cliente</class>
+    <class>ifpb.dac.mapemento.q3.model.Corrente</class>
+    <class>ifpb.dac.mapemento.q3.model.Poupanca</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/Jpa"/>
       <property name="javax.persistence.jdbc.user" value="Jpa"/>
