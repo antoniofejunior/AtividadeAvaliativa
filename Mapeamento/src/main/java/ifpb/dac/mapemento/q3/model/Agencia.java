@@ -6,6 +6,7 @@
 package ifpb.dac.mapemento.q3.model;
 
 import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
@@ -15,7 +16,9 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Agencia implements Serializable {
 
+    @Column(name = "numeroAgencia")
     private int numero;
+    @Column(name = "digitoAgencia")
     private int digito;
 
     public Agencia() {

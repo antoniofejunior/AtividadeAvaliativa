@@ -9,8 +9,6 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -21,7 +19,6 @@ import javax.persistence.Id;
 public class Cliente implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
     private String nome;
     private String email;
@@ -34,6 +31,7 @@ public class Cliente implements Serializable {
     @Embedded
     private Login login;
 
+    
     /**
      * @return the codigo
      */
